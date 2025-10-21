@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JrealTrip - Pendaftaran (2)</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .option-group label {
+            display: block;
+            font-weight: normal;
+            margin-bottom: 8px;
+        }
+        .option-group input {
+            width: auto !important; /* Mengalahkan style input global */
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" id="logo">JrealTrip</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#destinasi">Destinasi</a></li>
+                <li><a href="form.html" class="active">Pendaftaran</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2 class="page-header">Formulir Pendaftaran (Langkah 2 dari 2)</h2>
+
+        <div class="form-container">
+            <form action="sukses.html" method="get">
+
+                <h2>Detail Tambahan</h2>
+                
+                <div class="form-group">
+                    <label>Jenis Kelamin:</label>
+                    <div class="option-group">
+                        <label>
+                            <input type="radio" name="jenis_kelamin" value="Pria" required> Pria
+                        </label>
+                        <label>
+                            <input type="radio" name="jenis_kelamin" value="Wanita"> Wanita
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Pilihan Paket (Bisa pilih lebih dari satu):</label>
+                    <div class="option-group">
+                        <label>
+                            <input type="checkbox" name="paket[]" value="all_in"> All in (Hotel, Paket Wisata, Makanan, Transport, Tour Guide)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="paket[]" value="paket_wisata"> Paket Wisata
+                        </label>
+                        <label>
+                            <input type="checkbox" name="paket[]" value="makanan"> Makanan
+                        </label>
+                        <label>
+                            <input type="checkbox" name="paket[]" value="hotel"> Hotel
+                        </label>
+                        <label>
+                            <input type="checkbox" name="paket[]" value="tour_guide"> Tour Guide
+                        </label>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <a href="sukses.html" style="text-decoration:none; padding: 12px 25px; margin-right: 10px; background-color: #f4f4f4; color: #555; border: 1px solid #ccc; border-radius: 4px; font-weight: bold; font-size: 1em;">Kembali</a>
+                    <input type="submit" value="Kirim Pendaftaran">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer" id="kontak">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>JrealTrip</h4>
+                <p>Jelajahi keindahan Indonesia yang tak tertandingi bersama kami.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hubungi Kami</h4>
+                <p><strong>Email:</strong> info@JrealTrip.com</p>
+                <p><strong>Telepon:</strong> (021) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Akses Cepat</h4>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="index.html#destinasi">Destinasi</a></p>
+                <p><a href="form.html">Pendaftaran</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 JrealTrip. Semua Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
